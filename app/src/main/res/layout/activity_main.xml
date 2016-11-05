@@ -121,23 +121,41 @@
                     android:adjustViewBounds="true"/>
 
 
-                <com.sackcentury.shinebuttonlib.ShineButton
-                    android:layout_width="25sp"
-                    android:layout_height="25sp"
-                    android:scaleType="centerInside"
-                    android:src="@android:color/darker_gray"
-                    android:id="@+id/po_image2"
-                    app:btn_color="@android:color/darker_gray"
-                    app:btn_fill_color="@color/md_red_500"
-                    app:allow_random_color="false"
-                    app:siShape="@raw/heart"
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
                     android:layout_below="@id/textView"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin">
 
-                    />
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:layout_width="@dimen/shine_button_20dp"
+                        android:layout_height="@dimen/shine_button_20dp"
+                        android:scaleType="centerInside"
+                        android:src="@android:color/darker_gray"
+                        android:id="@+id/po_image2"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@color/md_red_500"
+                        app:allow_random_color="false"
+                        app:siShape="@raw/heart"
+                        />
 
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:layout_width="@dimen/shine_button_20dp"
+                        android:layout_height="@dimen/shine_button_20dp"
+                        android:scaleType="centerInside"
+                        android:src="@android:color/darker_gray"
+                        android:id="@+id/po_image1"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@color/md_amber_500"
+                        app:allow_random_color="false"
+                        app:siShape="@raw/star"
+                        android:layout_marginLeft="@dimen/dimen_8dp"
+                        />
+
+                </LinearLayout>
 
             </RelativeLayout>
 

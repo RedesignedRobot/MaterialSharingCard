@@ -13,4 +13,5 @@
     <dimen name="dimen_32dp">32dp</dimen>
     <dimen name="dimen_48dp">48dp</dimen>
     <dimen name="dimen_56dp">56dp</dimen>
+    <dimen name="shine_button_20dp">20dp</dimen>
 </resources>
