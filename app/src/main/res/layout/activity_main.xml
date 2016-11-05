@@ -116,7 +116,7 @@
                     app:fabSize="mini"
                     app:srcCompat="@mipmap/twitter_logo"
                     android:id="@+id/floatingActionButton"
-                    android:backgroundTint="@color/twitter"
+                    app:backgroundTint="@color/twitter"
                     android:layout_alignBottom="@id/frameLayout"
                     android:layout_alignParentEnd="true"
                     android:layout_marginBottom="-20dp"

@@ -2,7 +2,6 @@ package com.aaxs.nitrov17.materialsharingcard;
 
 import android.animation.Animator;
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,7 +11,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));
+        getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));
+
         alphaAnimation = AnimationUtils.loadAnimation(this, R.anim.alpha_animation);
 
         floatingActionButton = (FloatingActionButton)findViewById(R.id.floatingActionButton);
@@ -49,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
     void launchTwitter(View view){
 
-        int x = imageView.getRight();
-        int y = imageView.getBottom();
+        x = imageView.getRight();
+        y = imageView.getBottom();
         x -= ((28 * pixelDensity) + (16 * pixelDensity));
 
         int hypo = (int) Math.hypot(imageView.getMaxHeight(), imageView.getMaxWidth());
@@ -58,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         if(flag){
 
             floatingActionButton.setImageResource(R.mipmap.image_cancel);
-
             floatingActionButton.setBackgroundResource(R.drawable.rounded_cancel_button);
 
             FrameLayout.LayoutParams layoutParams1 = (FrameLayout.LayoutParams) revelLayout.getLayoutParams();
